@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    /* padding: 0;
+    margin:0; */
+    font-family: 'Orelega One', cursive;
+    color:sienna;
+}
+h1{
+    text-transform: uppercase;
+}
+h3{
+    font-style: italic;
+    /* text-decoration: underline; */
+}
+#lista_ordinata{
+    background-color: seashell;
+    width:250px;
+    border: 2px groove burlywood;
+    
+}
+#lista_ordinata > li {
+    padding:10px;
+    font-size: 25px;
+}
+#messaggio {
+    animation: effetto 4s ease-in-out;
+}
+@keyframes effetto {
+    0%{
+        transform: translateX(20%);
+    }
+}
