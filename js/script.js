@@ -6,8 +6,10 @@
 var listCognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 var cognomeUtente = prompt("Inserisci il cognome:");
 var k=0;
-if(cognomeUtente == ""){
-    alert("Errore non hai inserito nessun cognome");
+
+
+if(cognomeUtente.trim() == '' || !isNaN(parseInt(cognomeUtente)) && typeof parseInt(cognomeUtente) == "number") {
+     alert("Errore!");
 }else{
     listCognomi.push(cognomeUtente);
     
